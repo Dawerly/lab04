@@ -93,6 +93,7 @@ lab04/
   algorithms.py
   basics.py
   app.py
+  main.py
   benchmark.py
   tests/test_algorithms.py
   tests/test_basics.py
@@ -115,7 +116,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 # Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
-python app.py
+python main.py
 python -m pytest -q
 python -m mypy .
 python -m black --check .
@@ -167,3 +168,5 @@ Benchmark будує дерево з 1093 вузлів і висотою 7 до 
 пошук, висота, незмінність, кеш і глибоке дерево перевірені тестами.
 
 Умова: наданий Lab_04.docx, варіант 14.
+
+`main.py` — точка входу: запускає демонстрацію з `app.py`.
